@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع توليد التطبيقات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>مرحباً بك في موقع توليد التطبيقات</h1>
+    </header>
+    <main>
+        <section>
+            <h2>توليد التطبيقات</h2>
+            <form id="generateForm">
+                <label for="appName">اسم التطبيق:</label>
+                <input type="text" id="appName" name="appName" required>
+                <label for="appType">نوع التطبيق:</label>
+                <select id="appType" name="appType">
+                    <option value="web">تطبيق ويب</option>
+                    <option value="mobile">تطبيق هاتف</option>
+                </select>
+                <button type="submit">توليد التطبيق</button>
+            </form>
+        </section>
+        <section id="resultSection" style="display:none;">
+            <h2>نتيجة التوليد</h2>
+            <pre id="generatedCode"></pre>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
